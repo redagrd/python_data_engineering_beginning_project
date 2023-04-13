@@ -1,4 +1,5 @@
 import pandas as pd  
+# connecteur/driver pour se connecter à la base de données (traducteur)
 import pymysql
 
 df = pd.read_csv('clients.csv')

@@ -1,4 +1,5 @@
 import pandas as p
+# connecteur/driver pour se connecter à la base de données (traducteur)
 import pymysql as maria
 from pymysql.connections import Connection
 

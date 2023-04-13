@@ -13,7 +13,7 @@ services: # Définition des services(liste des logiciels à installer)
     volumes: 
         - ./sql/install.sql:/docker-entrypoint-initdb.d/setup.sql
     ports:
-      - 3306:3306
+      - 3306:3306 # Port de la base de données de SQL
 
   adminer:
     image: adminer
