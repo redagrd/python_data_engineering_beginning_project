@@ -20,9 +20,9 @@ Nous chargeons un fichier .csv qui contient des utilisateurs et leurs informatio
 
     ```bash
     # Linux
-    python -m venv venv
+    python -m venv .venv
     # Windows
-    py -m venv venv
+    py -m venv .venv
     ```
 
 - Activez l'environnement virtuel
@@ -41,4 +41,16 @@ Nous chargeons un fichier .csv qui contient des utilisateurs et leurs informatio
 
 ```bash
 pip install -r requirements.txt
+```
+
+- démarrer la base de données
+
+```bash
+docker-compose up -d
+```
+
+- Lancez le script d'import des données
+
+```bash
+python import_data.py
 ```
